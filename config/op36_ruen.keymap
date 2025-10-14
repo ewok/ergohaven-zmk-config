@@ -58,14 +58,14 @@
         };
 
         cmben {
-            bindings = <&layer_en>;
-            key-positions = <2 3>;
+            bindings = <&to 0>;
+            key-positions = <31 34>;
             layers = <1>;
         };
 
         cmbru {
-            bindings = <&layer_ru>;
-            key-positions = <2 3>;
+            bindings = <&to 1>;
+            key-positions = <31 34>;
             layers = <0>;
         };
     };
