@@ -97,10 +97,10 @@
 
         sym_en {
             bindings = <
-  &kp N1           &kp N2           &kp N3            &kp N4            &kp N5                                  &kp N6                 &kp N7                 &kp N8           &kp N9               &kp N0
-  &hml LGUI EQUAL  &hml LALT SLASH  &hml LSHFT ASTRK  &hml LCTRL MINUS  &kp PLUS                                &kp PRCNT              &hmr RCTRL UNDERSCORE  &hmr RSHFT HASH  &hmr LALT BACKSLASH  &hmr RGUI DOLLAR
-  &kp DQT          &kp LESS_THAN    &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN     &kp SQT
-                                                      &trans            &mo 5                 &trans    &trans  &none                  &trans
+  &kp N1           &kp N2           &kp N3            &kp N4            &kp N5                                          &kp N6                 &kp N7                 &kp N8           &kp N9               &kp N0
+  &hml LGUI EQUAL  &hml LALT SLASH  &hml LSHFT ASTRK  &hml LCTRL MINUS  &kp PLUS                                        &kp PRCNT              &hmr RCTRL UNDERSCORE  &hmr RSHFT HASH  &hmr LALT BACKSLASH  &hmr RGUI DOLLAR
+  &kp DQT          &kp LESS_THAN    &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                            &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN     &kp SQT
+                                                      &kp TAB           &kp SPACE             &kp RET    &kp BACKSPACE  &kp SPACE              &kp LS(TAB)
             >;
 
             display-name = "Symbols";
@@ -108,10 +108,10 @@
 
         sym_ru {
             bindings = <
-  &kp N1           &kp N2           &kp RU_N3         &kp N4            &kp N5                                  &kp N6                 &kp N7             &kp N8           &kp N9               &kp N0
-  &hml LGUI EQUAL  &hml LALT SLASH  &hml LSHFT ASTRK  &hml LCTRL MINUS  &kp PLUS                                &kp PRCNT              &hmr RCTRL UNDER   &hmr RSHFT HASH  &hmr RALT BACKSLASH  &hmr RGUI RU_CYRILLIC_E
-  &kp DQT          &kp LESS_THAN    &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN     &kp SQT
-                                                      &trans            &mo 5                 &trans    &trans  &none                  &trans
+  &kp N1           &kp N2           &kp RU_N3         &kp N4            &kp N5                                          &kp N6                 &kp N7             &kp N8           &kp N9               &kp N0
+  &hml LGUI EQUAL  &hml LALT SLASH  &hml LSHFT ASTRK  &hml LCTRL MINUS  &kp PLUS                                        &kp PRCNT              &hmr RCTRL UNDER   &hmr RSHFT HASH  &hmr RALT BACKSLASH  &hmr RGUI RU_CYRILLIC_E
+  &kp DQT          &kp LESS_THAN    &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                            &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN     &kp SQT
+                                                      &kp TAB           &kp SPACE             &kp RET    &kp BACKSPACE  &kp SPACE              &kp LS(TAB)
             >;
 
             display-name = "Symbols";
@@ -121,7 +121,7 @@
             bindings = <
   &kp N1         &kp N2    &kp N3     &kp N4     &kp N5                        &kp N6           &kp N7           &kp N8           &kp N9        &kp N0
   &hml LGUI ESC  &kp LALT  &kp LSHFT  &kp LCTRL  &kp ENTER                     &kp PRINTSCREEN  &hmr RCTRL LEFT  &hmr RSHFT DOWN  &hmr LALT UP  &hmr RGUI RIGHT
-  &layer_en      &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &layer_ru
+  &kp A          &kp HOME  &kp INS    &kp END    &kp DELETE                    &kp CAPS         &none            &kp PG_DN        &kp PG_UP     &kp A
                                       &trans     &none       &trans    &trans  &mo 5            &trans
             >;
 
