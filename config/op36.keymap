@@ -42,7 +42,39 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <3 4>;
+            layers = <1>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <5 6>;
+            layers = <1>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 6>;
+            layers = <1>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <0 1>;
+            layers = <1>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -60,10 +92,10 @@
 
         sym_en {
             bindings = <
-  &kp N1           &kp N2           &kp N3            &kp N4            &kp N5                                          &kp N6                 &kp N7                 &kp N8           &kp N9               &kp N0
-  &hml LGUI EQUAL  &hml LALT SLASH  &hml LSHFT ASTRK  &hml LCTRL MINUS  &kp PLUS                                        &kp PRCNT              &hmr RCTRL UNDERSCORE  &hmr RSHFT HASH  &hmr LALT BACKSLASH  &hmr RGUI LEFT_BRACKET
-  &kp DQT          &kp LESS_THAN    &kp LEFT_BRACE    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                            &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN     &kp SQT
-                                                      &kp TAB           &kp SPACE             &kp RET    &kp BACKSPACE  &kp SPACE              &kp LS(TAB)
+  &kp N1           &kp N2           &kp N3               &kp N4            &kp N5                                          &kp N6                 &kp N7                 &kp N8           &kp N9               &kp N0
+  &hml LGUI EQUAL  &hml LALT SLASH  &hml LSHFT ASTERISK  &hml LCTRL MINUS  &kp PLUS                                        &kp PRCNT              &hmr RCTRL UNDERSCORE  &hmr RSHFT HASH  &hmr LALT BACKSLASH  &hmr RGUI LEFT_BRACKET
+  &kp DQT          &kp LESS_THAN    &kp LEFT_BRACE       &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS                            &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &kp GREATER_THAN     &kp SQT
+                                                         &kp TAB           &kp SPACE             &kp RET    &kp BACKSPACE  &kp SPACE              &kp LS(TAB)
             >;
 
             display-name = "Symbols";
