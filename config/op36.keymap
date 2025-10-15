@@ -65,13 +65,13 @@
 
         excl {
             bindings = <&kp EXCL>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             layers = <1>;
         };
 
         at {
             bindings = <&kp AT>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             layers = <1>;
         };
     };
