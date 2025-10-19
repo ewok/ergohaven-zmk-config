@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &mt {
     quick-tap-ms = <200>;
@@ -86,6 +87,24 @@
             key-positions = <25 26>;
             layers = <0>;
         };
+
+        switch {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        btl {
+            bindings = <&mo 6>;
+            key-positions = <30 32>;
+            layers = <0>;
+        };
+
+        btr {
+            bindings = <&mo 6>;
+            key-positions = <33 35>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -107,7 +126,7 @@
   &kp N1             &kp N2         &kp N3     &kp N4     &kp N5                                     &kp N6            &kp N7     &kp N8    &kp N9            &kp N0
   &hml LCTRL EQUAL   &kp SLASH      &kp ASTRK  &kp MINUS  &kp PLUS                                   &kp PERCENT       &kp UNDER  &kp HASH  &kp BACKSLASH     &hmr RCTRL LEFT_BRACKET
   &hml LEFT_ALT DQT  &kp LESS_THAN  &kp EXCL   &kp AT     &hml LCMD CARET                            &hmr RCMD DOLLAR  &kp AMPS   &kp PIPE  &kp GREATER_THAN  &hmr RIGHT_ALT SQT
-                                               &mo 3      &trans           &kp RET    &kp BACKSPACE  &trans            &mo 3
+                                               &kp ESC    &trans           &kp RET    &kp BACKSPACE  &trans            &trans
             >;
 
             display-name = "Symbols";
@@ -115,24 +134,23 @@
 
         nav {
             bindings = <
-  &kp CAPS         &kp F1  &kp F2   &kp F3   &kp F4                                    &kp C_PP                   &kp C_VOL_DN    &kp C_VOL_UP  &kp C_MUTE     &kp C_BRI_UP
-  &kp LGUI         &kp F5  &kp F6   &kp F7   &kp F8                                    &kp LEFT                   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT      &kp C_BRI_DN
-  &kp PRINTSCREEN  &kp F9  &kp F10  &kp F11  &kp F12                                   &hmr LEFT_CONTROL HOME     &kp PG_DN       &kp PG_UP     &hmr RALT END  &kp LC(PRINTSCREEN)
-                                    &kp ESC  &mt LEFT_SHIFT LG(SPACE)  &mo 3    &mo 3  &mt RIGHT_SHIFT RG(SPACE)  &kp DEL
+  &kp CAPS         &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK                     &kp C_PP                &kp C_VOL_DN    &kp C_VOL_UP  &kp C_MUTE  &kp C_BRI_UP
+  &kp LCTRL        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                         &kp LEFT                &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp C_BRI_DN
+  &kp PRINTSCREEN  &none           &msc SCRL_DOWN  &msc SCRL_UP     &kp LGUI                      &hmr LEFT_CONTROL HOME  &kp PG_DN       &kp PG_UP     &kp END     &hmr RIGHT_ALT RC(PRINTSCREEN)
+                                                   &trans           &trans     &trans    &kp DEL  &trans                  &trans
             >;
 
             display-name = "Navigation";
         };
 
-        adj {
+        fs {
+            display-name = "Navigation";
             bindings = <
-  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-  &none        &none         &none         &none         &out OUT_BLE                    &out OUT_BLE  &none         &none         &none         &none
-  &bootloader  &none         &none         &none         &out OUT_USB                    &out OUT_USB  &none         &none         &none         &studio_unlock
-                                           &trans        &to 4         &trans    &trans  &to 4         &trans
+  &none  &kp F1  &kp F2   &kp F3   &kp F4                     &none             &none   &none  &none  &none
+  &none  &kp F5  &kp F6   &kp F7   &kp F8                     &none             &none   &none  &none  &none
+  &none  &kp F9  &kp F10  &kp F11  &kp F12                    &kp LEFT_CONTROL  &none   &none  &none  &kp RIGHT_ALT
+                          &trans   &trans   &trans    &trans  &trans            &trans
             >;
-
-            display-name = "Adjust";
         };
 
         gaming {
@@ -151,6 +169,17 @@
   &kp F8   &kp M   &kp I   &kp N9  &kp N0                    &trans  &trans  &trans  &trans  &trans
                            &to 0   &trans  &trans    &trans  &trans  &to 0
             >;
+        };
+
+        adj {
+            bindings = <
+  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+  &none        &none         &none         &none         &out OUT_BLE                    &out OUT_BLE  &none         &none         &none         &none
+  &bootloader  &none         &none         &none         &out OUT_USB                    &out OUT_USB  &none         &none         &none         &studio_unlock
+                                           &trans        &to 4         &trans    &trans  &to 4         &trans
+            >;
+
+            display-name = "Adjust";
         };
     };
 };
