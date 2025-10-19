@@ -52,42 +52,6 @@
             layers = <0>;
         };
 
-        lpar {
-            bindings = <&kp LPAR>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        rpar {
-            bindings = <&kp RPAR>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        lbrc {
-            bindings = <&kp LBRC>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-
-        rbrc {
-            bindings = <&kp RBRC>;
-            key-positions = <5 6>;
-            layers = <0>;
-        };
-
-        lbkt {
-            bindings = <&kp LBKT>;
-            key-positions = <23 24>;
-            layers = <0>;
-        };
-
-        rbkt {
-            bindings = <&kp RBKT>;
-            key-positions = <25 26>;
-            layers = <0>;
-        };
-
         switch {
             bindings = <&kp LG(SPACE)>;
             key-positions = <31 34>;
@@ -113,22 +77,34 @@
             layers = <0>;
         };
 
-        lbkt2 {
-            bindings = <&kp LBKT>;
-            key-positions = <8 7>;
-            layers = <0>;
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <4 3>;
+            layers = <1>;
         };
 
-        sqt {
-            bindings = <&kp SQT>;
-            key-positions = <18 19>;
-            layers = <0>;
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <6 5>;
+            layers = <1>;
         };
 
-        dqt {
-            bindings = <&kp DQT>;
-            key-positions = <11 10>;
-            layers = <0>;
+        at {
+            bindings = <&kp AT>;
+            key-positions = <3 2>;
+            layers = <1>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <2 1>;
+            layers = <1>;
+        };
+
+        amp {
+            bindings = <&kp AMPS>;
+            key-positions = <6 7>;
+            layers = <1>;
         };
     };
 
@@ -148,10 +124,10 @@
 
         sym_en {
             bindings = <
-  &kp N1            &kp N2       &kp N3           &kp N4            &kp N5                                 &kp N6     &kp N7            &kp N8          &kp N9                &kp N0
-  &kp EXCL          &kp AT_SIGN  &kp HASH         &kp DOLLAR        &kp PERCENT                            &kp CARET  &kp AMPERSAND     &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-  &hml LEFT_ALT LT  &kp SLASH    &hml LGUI ASTRK  &hml LCTRL MINUS  &kp PLUS                               &kp EQUAL  &hmr RCTRL UNDER  &hmr RGUI PIPE  &kp BACKSLASH         &hmr RIGHT_ALT GT
-                                                  &kp ESC           &kp SPACE    &kp RET    &kp BACKSPACE  &kp SPACE  &kp TILDE
+  &kp N1             &kp N2     &kp N3          &kp N4           &kp N5                              &kp N6       &kp N7           &kp N8          &kp N9         &kp N0
+  &kp EQUAL          &kp SLASH  &kp ASTERISK    &kp MINUS        &kp PLUS                            &kp PERCENT  &kp UNDER        &kp HASH        &kp BACKSLASH  &kp LBKT
+  &hml LEFT_ALT DQT  &kp LT     &hml LGUI LBRC  &hml LCTRL LBKT  &kp LPAR                            &kp RPAR     &hmr RCTRL RBKT  &hmr RGUI RBRC  &kp GT         &hmr RIGHT_ALT SQT
+                                                &kp ESC          &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
             >;
 
             display-name = "Symbols";
