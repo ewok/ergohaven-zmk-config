@@ -92,6 +92,7 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <31 34>;
             layers = <0>;
+            timeout-ms = <1000>;
         };
 
         btl {
@@ -132,13 +133,13 @@
 
         sqt {
             bindings = <&kp SQT>;
-            key-positions = <18 19>;
+            key-positions = <18 17>;
             layers = <0>;
         };
 
         dqt {
             bindings = <&kp DQT>;
-            key-positions = <11 10>;
+            key-positions = <11 12>;
             layers = <0>;
         };
     };
