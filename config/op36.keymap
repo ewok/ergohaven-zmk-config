@@ -90,7 +90,7 @@
 
         switch {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <8 9>;
+            key-positions = <31 34>;
             layers = <0>;
         };
 
@@ -111,6 +111,36 @@
             key-positions = <30 35>;
             layers = <0>;
         };
+
+        gt {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        lt {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <3 2>;
+            layers = <0>;
+        };
+
+        lbkt2 {
+            bindings = <&kp LBKT>;
+            key-positions = <8 7>;
+            layers = <0>;
+        };
+
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        dqt {
+            bindings = <&kp DQT>;
+            key-positions = <11 10>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -129,10 +159,10 @@
 
         sym_en {
             bindings = <
-  &kp N1             &kp N2         &kp N3          &kp N4         &kp N5                               &kp N6       &kp N7           &kp N8          &kp N9            &kp N0
-  &kp EQUAL          &kp SLASH      &kp ASTRK       &kp MINUS      &kp PLUS                             &kp PERCENT  &kp UNDER        &kp HASH        &kp BACKSLASH     &kp LBKT
-  &hml LEFT_ALT DQT  &kp LESS_THAN  &hml LGUI EXCL  &hml LCTRL AT  &kp CARET                            &kp DOLLAR   &hmr RCTRL AMPS  &hmr RGUI PIPE  &kp GREATER_THAN  &hmr RIGHT_ALT SQT
-                                                    &kp ESC        &trans     &kp RET    &kp BACKSPACE  &trans       &trans
+  &kp N1        &kp N2       &kp N3           &kp N4            &kp N5                                 &kp N6     &kp N7            &kp N8          &kp N9                &kp N0
+  &kp EXCL      &kp AT_SIGN  &kp HASH         &kp DOLLAR        &kp PERCENT                            &kp CARET  &kp AMPERSAND     &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+  &kp LEFT_ALT  &kp SLASH    &hml LGUI ASTRK  &hml LCTRL MINUS  &kp PLUS                               &kp EQUAL  &hmr RCTRL UNDER  &hmr RGUI PIPE  &kp BACKSLASH         &kp RIGHT_ALT
+                                              &kp ESC           &kp SPACE    &kp RET    &kp BACKSPACE  &kp SPACE  &trans
             >;
 
             display-name = "Symbols";
