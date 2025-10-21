@@ -113,10 +113,10 @@
 
         en {
             bindings = <
-  &kp Q        &kp W  &kp E        &kp R         &kp T                                               &kp Y            &kp U         &kp I            &kp O    &kp P
-  &kp A        &kp S  &kp D        &kp F         &kp G                                               &kp H            &kp J         &kp K            &kp L    &kp SEMI
-  &hml LALT Z  &kp X  &hml LCMD C  &hml LCTRL V  &kp B                                               &kp N            &hmr RCTRL M  &hmr RGUI COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
-                                   &lt 2 TAB     &mt LEFT_SHIFT SPACE  &lt 1 RET    &lt 1 BACKSPACE  &mt RSHFT SPACE  &lt 2 GRAVE
+  &kp Q        &kp W  &kp E  &kp R         &kp T                                               &kp Y            &kp U         &kp I      &kp O    &kp P
+  &hml LCMD A  &kp S  &kp D  &kp F         &kp G                                               &kp H            &kp J         &kp K      &kp L    &hmr RCMD SEMI
+  &hml LALT Z  &kp X  &kp C  &hml LCTRL V  &kp B                                               &kp N            &hmr RCTRL M  &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
+                             &lt 2 TAB     &mt LEFT_SHIFT SPACE  &lt 1 RET    &lt 1 BACKSPACE  &mt RSHFT SPACE  &lt 2 GRAVE
             >;
 
             display-name = "Base";
@@ -124,10 +124,10 @@
 
         sym_en {
             bindings = <
-  &kp N1             &kp N2     &kp N3          &kp N4           &kp N5                              &kp N6       &kp N7           &kp N8          &kp N9         &kp N0
-  &kp EQUAL          &kp SLASH  &kp ASTERISK    &kp MINUS        &kp PLUS                            &kp PERCENT  &kp UNDER        &kp HASH        &kp BACKSLASH  &kp LBKT
-  &hml LEFT_ALT DQT  &kp LT     &hml LGUI LBRC  &hml LCTRL LBKT  &kp LPAR                            &kp RPAR     &hmr RCTRL RBKT  &hmr RGUI RBRC  &kp GT         &hmr RIGHT_ALT SQT
-                                                &kp ESC          &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
+  &kp N1             &kp N2     &kp N3        &kp N4           &kp N5                              &kp N6       &kp N7           &kp N8    &kp N9         &kp N0
+  &hml LCMD EQUAL    &kp SLASH  &kp ASTERISK  &kp MINUS        &kp PLUS                            &kp PERCENT  &kp UNDER        &kp HASH  &kp BACKSLASH  &hmr RCMD LBKT
+  &hml LEFT_ALT DQT  &kp LT     &kp LBRC      &hml LCTRL LBKT  &kp LPAR                            &kp RPAR     &hmr RCTRL RBKT  &kp RBRC  &kp GT         &hmr RIGHT_ALT SQT
+                                              &kp ESC          &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
             >;
 
             display-name = "Symbols";
