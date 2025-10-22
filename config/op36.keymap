@@ -106,6 +106,18 @@
             key-positions = <6 7>;
             layers = <1>;
         };
+
+        lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
     };
 
     keymap {
