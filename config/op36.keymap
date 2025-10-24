@@ -147,10 +147,10 @@
         fs {
             display-name = "Navigation";
             bindings = <
-  &kp LCMD   &kp F1  &kp F2   &kp F3   &kp F4                    &kp SYSREQ  &kp LA(LC(DEL))  &none  &none  &kp RCMD
-  &kp LCTRL  &kp F5  &kp F6   &kp F7   &kp F8                    &none       &none            &none  &none  &kp RCTRL
-  &kp LALT   &kp F9  &kp F10  &kp F11  &kp F12                   &none       &none            &none  &none  &kp RIGHT_ALT
-                              &trans   &trans   &trans    &none  &trans      &trans
+  &kp LCMD   &kp F1  &kp F2   &kp F3   &kp F4                     &kp SYSREQ  &kp LA(LC(DEL))  &none  &none  &kp RCMD
+  &kp LCTRL  &kp F5  &kp F6   &kp F7   &kp F8                     &none       &none            &none  &none  &kp RCTRL
+  &kp LALT   &kp F9  &kp F10  &kp F11  &kp F12                    &none       &none            &none  &none  &kp RIGHT_ALT
+                              &trans   &trans   &trans    &trans  &trans      &trans
             >;
         };
 
