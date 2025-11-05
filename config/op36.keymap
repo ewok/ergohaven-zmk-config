@@ -106,6 +106,18 @@
             key-positions = <6 7>;
             layers = <1>;
         };
+
+        lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <9 8>;
+            layers = <0>;
+        };
+
+        sqt {
+            bindings = <&kp SQT>;
+            key-positions = <19 18>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -125,7 +137,7 @@
         sym_en {
             bindings = <
   &hml LCMD N1       &kp N2     &kp N3        &kp N4     &kp N5                              &kp N6       &kp N7     &kp N8    &kp N9         &hmr RCMD N0
-  &hml LCTRL EQUAL   &kp SLASH  &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp PERCENT  &kp UNDER  &kp HASH  &kp BACKSLASH  &hmr RCTRL LBKT
+  &hml LCTRL EQUAL   &kp SLASH  &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp PERCENT  &kp UNDER  &kp HASH  &kp BACKSLASH  &hmr RCTRL PIPE
   &hml LEFT_ALT DQT  &kp LT     &kp LBRC      &kp LBKT   &kp LPAR                            &kp RPAR     &kp RBKT   &kp RBRC  &kp GT         &hmr RIGHT_ALT SQT
                                               &kp ESC    &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
             >;
@@ -135,10 +147,10 @@
 
         nav {
             bindings = <
-  &kp LCMD                   &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK                        &kp C_PP  &kp C_VOL_DN    &kp C_VOL_UP  &kp C_MUTE  &hmr RCMD C_BRI_UP
-  &kp LCTRL                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                            &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &hmr RCTRL C_BRI_DN
-  &hml LEFT_ALT PRINTSCREEN  &none           &msc SCRL_DOWN  &msc SCRL_UP     &kp CAPSLOCK                     &kp HOME  &kp PG_DN       &kp PG_UP     &kp END     &hmr RIGHT_ALT RC(PRINTSCREEN)
-                                                             &trans           &trans        &trans    &kp DEL  &trans    &trans
+  &kp LCMD                   &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK                        &kp C_VOL_DN  &kp C_VOL_UP    &kp C_BRI_DN  &kp C_BRI_UP  &hmr RCMD LBKT
+  &kp LCTRL                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                            &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &hmr RCTRL SQT
+  &hml LEFT_ALT PRINTSCREEN  &none           &msc SCRL_DOWN  &msc SCRL_UP     &kp CAPSLOCK                     &kp HOME      &kp PG_DN       &kp PG_UP     &kp END       &hmr RIGHT_ALT RC(PRINTSCREEN)
+                                                             &trans           &trans        &trans    &kp DEL  &trans        &trans
             >;
 
             display-name = "Navigation";
@@ -174,10 +186,10 @@
 
         adj {
             bindings = <
-  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-  &none        &none         &none         &none         &out OUT_BLE                    &out OUT_BLE  &none         &none         &none         &none
-  &bootloader  &none         &none         &none         &out OUT_USB                    &out OUT_USB  &none         &none         &none         &studio_unlock
-                                           &trans        &to 4         &trans    &trans  &to 4         &trans
+  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+  &none         &none         &none         &bt BT_CLR    &out OUT_BLE                    &out OUT_BLE  &bt BT_CLR    &none         &none         &none
+  &bootloader   &none         &none         &none         &out OUT_USB                    &out OUT_USB  &none         &none         &none         &studio_unlock
+                                            &trans        &to 4         &trans    &trans  &to 4         &trans
             >;
 
             display-name = "Adjust";
