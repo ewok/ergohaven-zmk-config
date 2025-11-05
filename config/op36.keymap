@@ -100,6 +100,12 @@
             key-positions = <6 7>;
             layers = <1>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -107,10 +113,10 @@
 
         en {
             bindings = <
-  &hml LCMD Q   &kp W  &kp E  &kp R      &kp T                                               &kp Y          &kp U        &kp I      &kp O    &hmr RCMD P
-  &hml LCTRL A  &kp S  &kp D  &kp F      &kp G                                               &kp H          &kp J        &kp K      &kp L    &hmr RCTRL SEMI
-  &hml LALT Z   &kp X  &kp C  &kp V      &kp B                                               &kp N          &kp M        &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
-                              &lt 2 TAB  &mt LEFT_SHIFT SPACE  &lt 1 RET    &lt 1 BACKSPACE  &mt RSHFT ESC  &lt 2 GRAVE
+  &hml LCMD Q   &kp W  &kp E  &kp R      &kp T                                               &kp Y            &kp U        &kp I      &kp O    &hmr RCMD P
+  &hml LCTRL A  &kp S  &kp D  &kp F      &kp G                                               &kp H            &kp J        &kp K      &kp L    &hmr RCTRL SEMI
+  &hml LALT Z   &kp X  &kp C  &kp V      &kp B                                               &kp N            &kp M        &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
+                              &lt 2 TAB  &mt LEFT_SHIFT SPACE  &lt 1 RET    &lt 1 BACKSPACE  &mt RSHFT SPACE  &lt 2 GRAVE
             >;
 
             display-name = "Base";
@@ -118,10 +124,10 @@
 
         sym_en {
             bindings = <
-  &hml LCMD N1       &kp N2     &kp N3        &kp N4       &kp N5                              &kp N6       &kp N7     &kp N8    &kp N9         &hmr RCMD N0
-  &hml LCTRL EQUAL   &kp SLASH  &kp ASTERISK  &kp MINUS    &kp PLUS                            &kp PERCENT  &kp UNDER  &kp HASH  &kp BACKSLASH  &hmr RCTRL LBKT
-  &hml LEFT_ALT DQT  &kp LT     &kp LBRC      &kp LBKT     &kp LPAR                            &kp RPAR     &kp RBKT   &kp RBRC  &kp GT         &hmr RIGHT_ALT SQT
-                                              &kp LS(ESC)  &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
+  &hml LCMD N1       &kp N2     &kp N3        &kp N4     &kp N5                              &kp N6       &kp N7     &kp N8    &kp N9         &hmr RCMD N0
+  &hml LCTRL EQUAL   &kp SLASH  &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp PERCENT  &kp UNDER  &kp HASH  &kp BACKSLASH  &hmr RCTRL LBKT
+  &hml LEFT_ALT DQT  &kp LT     &kp LBRC      &kp LBKT   &kp LPAR                            &kp RPAR     &kp RBKT   &kp RBRC  &kp GT         &hmr RIGHT_ALT SQT
+                                              &kp TAB    &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
             >;
 
             display-name = "Symbols";
@@ -130,7 +136,7 @@
         nav {
             bindings = <
   &kp LCMD                   &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK                     &kp C_MUTE  &kp C_VOL_DN    &kp C_VOLUME_UP  &kp C_BRI_UP  &hmr RCMD C_BRI_DN
-  &kp LCTRL                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                         &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT     &hmr RCTRL CAPSLOCK
+  &hml LCTRL ESCAPE          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                         &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT     &hmr RCTRL CAPSLOCK
   &hml LEFT_ALT PRINTSCREEN  &none           &msc SCRL_DOWN  &msc SCRL_UP     &none                         &kp HOME    &kp PG_DN       &kp PG_UP        &kp END       &hmr RIGHT_ALT RC(PRINTSCREEN)
                                                              &trans           &trans     &trans    &kp DEL  &trans      &trans
             >;
