@@ -111,7 +111,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <16 17>;
+            key-positions = <32 33>;
             layers = <0>;
         };
     };
@@ -124,7 +124,7 @@
   &hml LCMD Q   &kp W  &kp E  &kp R          &kp T                                                          &kp Y             &kp U            &kp I      &kp O    &hmr RCMD P
   &hml LCTRL A  &kp S  &kp D  &kp F          &kp G                                                          &kp H             &kp J            &kp K      &kp L    &hmr RCTRL SEMI
   &hml LALT Z   &kp X  &kp C  &kp V          &kp B                                                          &kp N             &kp M            &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
-                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 BACKSPACE  &hmr RSHFT SPACE  &lt_tap 2 GRAVE
+                              &lt_tap 2 ESC  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 BACKSPACE  &hmr RSHFT SPACE  &lt_tap 2 GRAVE
             >;
 
             display-name = "Base";
