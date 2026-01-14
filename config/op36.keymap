@@ -125,7 +125,7 @@
   &hml LCMD Q   &kp W  &kp E  &kp R          &kp T                                                          &kp Y             &kp U            &kp I      &kp O    &hmr RCMD P
   &hml LCTRL A  &kp S  &kp D  &kp F          &kp G                                                          &kp H             &kp J            &kp K      &kp L    &hmr RCTRL SEMI
   &hml LALT Z   &kp X  &kp C  &kp V          &kp B                                                          &kp N             &kp M            &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
-                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 BACKSPACE  &hmr RSHFT SPACE  &lt_tap 2 GRAVE
+                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 BACKSPACE  &hmr RSHFT SPACE  &lt_tap 2 LC(B)
             >;
 
             display-name = "Base";
@@ -136,7 +136,7 @@
   &hml LCMD N1       &kp N2     &kp N3        &kp N4     &kp N5                              &kp N6       &kp N7     &kp N8    &kp N9         &hmr RCMD N0
   &hml LCTRL EQUAL   &kp SLASH  &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp PERCENT  &kp UNDER  &kp HASH  &kp BACKSLASH  &hmr RCTRL LBKT
   &hml LEFT_ALT DQT  &kp LT     &kp LBRC      &kp LBKT   &kp LPAR                            &kp RPAR     &kp RBKT   &kp RBRC  &kp GT         &hmr RIGHT_ALT SQT
-                                              &kp ESC    &trans    &kp RET    &kp BACKSPACE  &trans       &kp TILDE
+                                              &kp ESC    &trans    &kp RET    &kp BACKSPACE  &trans       &kp GRAVE
             >;
 
             display-name = "Symbols";
