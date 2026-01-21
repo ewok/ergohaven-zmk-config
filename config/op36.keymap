@@ -87,7 +87,7 @@
 
         dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <6 5>;
+            key-positions = <13 14>;
             layers = <1>;
         };
 
@@ -105,7 +105,7 @@
 
         amp {
             bindings = <&kp AMPS>;
-            key-positions = <6 7>;
+            key-positions = <13 12>;
             layers = <1>;
         };
 
@@ -114,6 +114,12 @@
             key-positions = <16 17>;
             layers = <0>;
             require-prior-idle-ms = <125>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <7 8>;
+            layers = <1>;
         };
     };
 
