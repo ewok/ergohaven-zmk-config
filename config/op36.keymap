@@ -93,25 +93,19 @@
 
         at {
             bindings = <&kp AT>;
-            key-positions = <3 2>;
+            key-positions = <2 1>;
             layers = <1>;
         };
 
         excl {
             bindings = <&kp EXCL>;
-            key-positions = <2 1>;
+            key-positions = <1 0>;
             layers = <1>;
         };
 
         amp {
             bindings = <&kp AMPS>;
-            key-positions = <13 12>;
-            layers = <1>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <7 8>;
+            key-positions = <2 3>;
             layers = <1>;
         };
 
