@@ -115,13 +115,6 @@
             layers = <1>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <16 17>;
-            timeout-ms = <1500>;
-            layers = <1>;
-        };
-
         mouse2 {
             bindings = <&mo 3>;
             key-positions = <32 31>;
@@ -134,10 +127,10 @@
 
         en {
             bindings = <
-  &hml LCMD Q   &kp W  &kp E  &kp R          &kp T                                                          &kp Y             &kp U          &kp I      &kp O    &hmr RCMD P
-  &hml LCTRL A  &kp S  &kp D  &kp F          &kp G                                                          &kp H             &kp J          &kp K      &kp L    &hmr RCTRL SEMI
-  &hml LALT Z   &kp X  &kp C  &kp V          &kp B                                                          &kp N             &kp M          &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
-                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 BACKSPACE  &hmr RSHFT SPACE  &lt_tap 2 F12
+  &hml LCMD Q   &kp W  &kp E  &kp R          &kp T                                                    &kp Y             &kp U          &kp I      &kp O    &hmr RCMD P
+  &hml LCTRL A  &kp S  &kp D  &kp F          &kp G                                                    &kp H             &kp J          &kp K      &kp L    &hmr RCTRL SEMI
+  &hml LALT Z   &kp X  &kp C  &kp V          &kp B                                                    &kp N             &kp M          &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
+                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 ESC  &hmr RSHFT SPACE  &lt_tap 2 F12
             >;
 
             display-name = "Base";
@@ -148,7 +141,7 @@
   &hml LCMD N1         &kp N2        &kp N3        &kp N4     &kp N5                              &kp PERCENT            &kp UNDER         &kp HASH         &kp BACKSLASH  &hmr RCMD LEFT_BRACKET
   &hml LCTRL NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9     &kp N0                              &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LESS_THAN  &hmr RCTRL SINGLE_QUOTE
   &hml LEFT_ALT EQUAL  &kp SLASH     &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp RIGHT_PARENTHESIS  &kp RBKT          &kp RIGHT_BRACE  &kp GT         &hmr RIGHT_ALT DOUBLE_QUOTES
-                                                   &kp ESC    &trans    &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE
+                                                   &kp PIPE   &trans    &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE
             >;
 
             display-name = "Symbols";
