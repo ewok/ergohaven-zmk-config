@@ -74,7 +74,7 @@
         };
 
         fs {
-            bindings = <&mo 3>;
+            bindings = <&mo 0>;
             key-positions = <30 35>;
             layers = <0>;
         };
@@ -139,10 +139,10 @@
 
         sym_en {
             bindings = <
-  &hml LCMD N1         &kp N2        &kp N3        &kp N4     &kp N5                              &kp PERCENT           &kp UNDER              &kp HASH        &kp BACKSLASH    &hmr RCMD LEFT_BRACKET
-  &hml LCTRL NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9     &kp N0                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &hmr RCTRL SINGLE_QUOTE
-  &hml LEFT_ALT EQUAL  &kp SLASH     &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp LBKT              &kp RBKT               &kp LESS_THAN   &kp GT           &hmr RIGHT_ALT DOUBLE_QUOTES
-                                                   &kp ESC    &trans    &kp RET    &kp BACKSPACE  &trans                &kp GRAVE
+  &hml LCMD N1         &kp N2        &kp N3        &kp N4     &kp N5                              &kp PERCENT            &kp UNDER         &kp HASH         &kp BACKSLASH  &hmr RCMD LEFT_BRACKET
+  &hml LCTRL NUMBER_6  &kp NUMBER_7  &kp N8        &kp N9     &kp N0                              &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LESS_THAN  &hmr RCTRL SINGLE_QUOTE
+  &hml LEFT_ALT EQUAL  &kp SLASH     &kp ASTERISK  &kp MINUS  &kp PLUS                            &kp RIGHT_PARENTHESIS  &kp RBKT          &kp RIGHT_BRACE  &kp GT         &hmr RIGHT_ALT DOUBLE_QUOTES
+                                                   &kp ESC    &trans    &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE
             >;
 
             display-name = "Symbols";
@@ -150,22 +150,22 @@
 
         nav {
             bindings = <
-  &kp LCMD                   &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK                     &kp C_MUTE  &kp C_VOL_DN    &kp C_VOLUME_UP  &kp C_BRI_DN  &hmr RCMD C_BRI_UP
-  &hml LCTRL ESCAPE          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                         &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT     &hmr RCTRL CAPSLOCK
-  &hml LEFT_ALT PRINTSCREEN  &none           &msc SCRL_DOWN  &msc SCRL_UP     &none                         &kp HOME    &kp PG_DN       &kp PG_UP        &kp END       &hmr RIGHT_ALT RC(PRINTSCREEN)
-                                                             &kp LS(TAB)      &trans     &trans    &kp DEL  &trans      &kp TILDE
+  &kp LCMD               &kp F1  &kp F2   &kp F3       &kp F4                      &kp C_MUTE  &kp C_VOL_DN    &kp C_VOLUME_UP  &kp C_BRI_DN  &hmr RCMD C_BRI_UP
+  &kp LCTRL              &kp F5  &kp F6   &kp F7       &kp F8                      &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT     &hmr RCTRL CAPSLOCK
+  &hml LALT PRINTSCREEN  &kp F9  &kp F10  &kp F11      &kp F12                     &kp HOME    &kp PG_DN       &kp PG_UP        &kp END       &hmr RIGHT_ALT RC(PRINTSCREEN)
+                                          &kp LS(TAB)  &trans   &trans    &kp DEL  &trans      &kp TILDE
             >;
 
             display-name = "Navigation";
         };
 
-        fs {
+        mouse {
             display-name = "Navigation";
             bindings = <
-  &kp LA(LC(DELETE))  &kp F1  &kp F2   &kp F3   &kp F4                     &none   &none   &none  &none  &kp RCMD
-  &kp LCTRL           &kp F5  &kp F6   &kp F7   &kp F8                     &none   &none   &none  &none  &kp RCTRL
-  &kp LALT            &kp F9  &kp F10  &kp F11  &kp F12                    &none   &none   &none  &none  &kp RIGHT_ALT
-                                       &trans   &trans   &trans    &trans  &trans  &trans
+  &kp LCMD   &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &mkp MCLK                          &mkp MCLK       &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp RGUI
+  &kp LCTRL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none                              &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RCTRL
+  &kp LALT   &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT                    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_RIGHT  &kp RALT
+                                             &trans           &trans           &trans    &trans  &trans          &trans
             >;
         };
 
