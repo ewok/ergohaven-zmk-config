@@ -109,16 +109,16 @@
             layers = <1>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <16 17>;
-            layers = <0>;
-            require-prior-idle-ms = <125>;
-        };
-
         pipe {
             bindings = <&kp PIPE>;
             key-positions = <7 8>;
+            layers = <1>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <16 17>;
+            timeout-ms = <1500>;
             layers = <1>;
         };
     };
