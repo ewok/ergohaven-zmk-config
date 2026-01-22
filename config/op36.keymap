@@ -114,6 +114,12 @@
             key-positions = <32 31>;
             layers = <0>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 17>;
+            layers = <2>;
+        };
     };
 
     keymap {
@@ -121,10 +127,10 @@
 
         en {
             bindings = <
-  &hml LCMD Q   &kp W  &kp E  &kp R          &kp T                                                    &kp Y             &kp U          &kp I      &kp O    &hmr RCMD P
-  &hml LCTRL A  &kp S  &kp D  &kp F          &kp G                                                    &kp H             &kp J          &kp K      &kp L    &hmr RCTRL SEMI
-  &hml LALT Z   &kp X  &kp C  &kp V          &kp B                                                    &kp N             &kp M          &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
-                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 ESC  &hmr RSHFT SPACE  &lt_tap 2 F12
+  &hml LCMD Q   &kp W  &kp E  &kp R          &kp T                                                          &kp Y             &kp U          &kp I      &kp O    &hmr RCMD P
+  &hml LCTRL A  &kp S  &kp D  &kp F          &kp G                                                          &kp H             &kp J          &kp K      &kp L    &hmr RCTRL SEMI
+  &hml LALT Z   &kp X  &kp C  &kp V          &kp B                                                          &kp N             &kp M          &kp COMMA  &kp DOT  &hmr RIGHT_ALT SLASH
+                              &lt_tap 2 TAB  &hml LEFT_SHIFT SPACE  &lt_hold 1 RET    &lt_hold 1 BACKSPACE  &hmr RSHFT SPACE  &lt_tap 2 F12
             >;
 
             display-name = "Base";
@@ -132,10 +138,10 @@
 
         sym_en {
             bindings = <
-  &hml LCMD EQUAL         &kp FSLH  &kp ASTRK  &kp MINUS  &kp PLUS                            &kp PERCENT            &kp UNDER         &kp HASH         &kp BACKSLASH  &hmr RCMD LEFT_BRACKET
-  &hml LCTRL NUMBER_1     &kp N2    &kp N3     &kp N4     &kp N5                              &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LESS_THAN  &hmr RCTRL SINGLE_QUOTE
-  &hml LEFT_ALT NUMBER_6  &kp N7    &kp N8     &kp N9     &kp N0                              &kp RIGHT_PARENTHESIS  &kp RBKT          &kp RIGHT_BRACE  &kp GT         &hmr RIGHT_ALT DOUBLE_QUOTES
-                                               &kp PIPE   &trans    &kp RET    &kp BACKSPACE  &trans                 &kp GRAVE
+  &hml LCMD NUMBER_1   &kp N2    &kp N3        &kp N4     &kp N5                           &kp PERCENT            &kp UNDER         &kp HASH         &kp BACKSLASH  &hmr RCMD LEFT_BRACKET
+  &hml LCTRL NUMBER_6  &kp N7    &kp N8        &kp N9     &kp N0                           &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp LEFT_BRACE   &kp LESS_THAN  &hmr RCTRL SINGLE_QUOTE
+  &hml LEFT_ALT EQUAL  &kp FSLH  &kp ASTERISK  &kp MINUS  &kp PLUS                         &kp RIGHT_PARENTHESIS  &kp RBKT          &kp RIGHT_BRACE  &kp GT         &hmr RIGHT_ALT DOUBLE_QUOTES
+                                               &kp PIPE   &trans    &kp ESCAPE    &kp ESC  &trans                 &kp GRAVE
             >;
 
             display-name = "Symbols";
@@ -143,10 +149,10 @@
 
         nav {
             bindings = <
-  &kp LCMD               &kp F1  &kp F2   &kp F3       &kp F4                      &kp C_MUTE  &kp C_VOL_DN    &kp C_VOLUME_UP  &kp C_BRI_DN  &hmr RCMD C_BRI_UP
-  &kp LCTRL              &kp F5  &kp F6   &kp F7       &kp F8                      &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT     &hmr RCTRL CAPSLOCK
-  &hml LALT PRINTSCREEN  &kp F9  &kp F10  &kp F11      &kp F12                     &kp HOME    &kp PG_DN       &kp PG_UP        &kp END       &hmr RIGHT_ALT RC(PRINTSCREEN)
-                                          &kp LS(TAB)  &trans   &trans    &kp DEL  &trans      &kp TILDE
+  &kp LCMD               &kp F1  &kp F2   &kp F3       &kp F4                                &kp C_MUTE  &kp C_VOL_DN    &kp C_VOLUME_UP  &kp C_BRI_DN  &hmr RCMD C_BRI_UP
+  &kp LCTRL              &kp F5  &kp F6   &kp F7       &kp F8                                &kp LEFT    &kp DOWN_ARROW  &kp UP_ARROW     &kp RIGHT     &hmr RCTRL CAPSLOCK
+  &hml LALT PRINTSCREEN  &kp F9  &kp F10  &kp F11      &kp F12                               &kp HOME    &kp PG_DN       &kp PG_UP        &kp END       &hmr RIGHT_ALT RC(PRINTSCREEN)
+                                          &kp LS(TAB)  &trans   &kp DELETE    &kp BACKSPACE  &trans      &kp TILDE
             >;
 
             display-name = "Navigation";
